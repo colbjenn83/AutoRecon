@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -z "$1" ]
 then
-        echo "Usage: ./recon.sh <IP>"
+        echo "Usage: ./autorecon.sh <IP>"
         exit 1
 fi
 printf "\n----- NMAP -----\n\n" > results
