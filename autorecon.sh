@@ -13,7 +13,7 @@ do
         if [[ $line == *open* ]] && [[ $line == *http* ]]
         then
                 echo "Running Gobuster..."
-                gobuster dir -u $1 -w usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > temp1
+                gobuster dir -u $1 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > temp1
 
         echo "Running WhatWeb..."
         whatweb $1 -v > temp2
